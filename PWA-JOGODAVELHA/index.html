@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>JOGO DA VELHA</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="white" />
+    <link rel="apple-touch-icon" href="images/" />
+</head>
+<body class="fullscreen">
+    <div class="background-image"></div>
+    <h1>Jogo da Velha</h1>
+    <div class="game-container">
+        <div class="board">
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+            <div class="cell" onclick="makeMove(this)"><img src="" alt=""></div>
+        </div>
+        <button onclick="resetGame()">Reiniciar</button>
+    </div>
+    <p id="status">Vez do Jogador X</p>
+    <div id="win-message"></div>
+    <script src="/js/script.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

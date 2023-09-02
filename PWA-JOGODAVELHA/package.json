@@ -1,0 +1,15 @@
+{
+  "name": "pwa-jogo",
+  "version": "1.0.0",
+  "description": "Uma pwa que simula um jogo da velha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve ."
+  },
+  "author": "leo n silva",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^13.0.4"
+  }
+}

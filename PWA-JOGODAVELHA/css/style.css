@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remova a margem padrão do corpo */
+    padding: 0; /* Remova o preenchimento padrão do corpo */
+    background: none; /* Remova qualquer fundo padrão */
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q95/wp-content/uploads/2023/06/legiao_Ov1paSP9VBGd.png.webp'); /* Substitua pelo nome correto da imagem do Goku */
+    background-size: cover; /* Redimensiona a imagem para cobrir a tela inteira */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+h1 {
+    color: #fff;
+}
+
+#status {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff; /* Altera a cor do status para branco */
+}
+
+#win-message {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #fff; /* Altera a cor da mensagem de vitória para branco */
+    display: none;
+}
+
+.game-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+.cell img {
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(238, 238, 238, 0.7); /* Faz o quadrado transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell.winner {
+    background-color: rgba(76, 175, 80, 0.7); /* Cor de fundo para vencedor transparente */
+    color: #fff;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e41818;
+    color: #fff;
+    border: none
+}
